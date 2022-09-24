@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    padding-bottom: 20px;
+}
+
+header {
+    background-color: rgba(167, 133, 237, 1);
+    color: white;
+    width: 100%;
+    height: 70px;
+    padding: 15px 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 41px;
+}
+
+header h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 54px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input {
+    border: 1px solid black;
+    padding-top: 14px;
+    padding-left: 14px;
+    padding-bottom: 14px;
+    width: 400px;
+    height: 46px;
+    border-radius: 8px;
+    margin-bottom: 41px;
+}
+
+.movies-container {
+    margin-bottom: 40px;
+    display: flex;
+}
+
+.btn-prev,
+.btn-next {
+    padding: 0px 24px;
+}
+
+.movie {
+    width: 168px;
+    height: 250px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.movies {
+    display: flex;
+    gap: 24px;
+}
+
+.movie__info {
+    background: rgba(0, 0, 0, 0.8);
+    width: 168px;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    padding: 10px 8px;
+}
+
+.movie__title {
+    color: #FDFDFD;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 10ch;
+}
+
+.movie__rating {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 150%;
+    color: #FBCD6E;
+    margin-left: auto;
+}
+
+.highlight__video {
+    width: 553px;
+    height: 311px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.highlight {
+    display: flex;
+    gap: 24px;
+}
+
+.highlight__info {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    width: 360px;
+    height: 311px;
+    padding: 16px;
+}
+
+.subtitle {
+    margin-bottom: 20px;
+}
+
+.highlight__title-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.highlight__title {
+    color: rgba(225, 131, 200, 1);
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.highlight__rating {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 16px;
+    text-align: right;
+    color: #A785ED;
+}
+
+.highlight__genre-launch {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.7);
+    margin-bottom: 30px;
+}
+
+.highlight__description {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.modal {
+    background-color: rgb(0, 0, 0, 0.8);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    overflow-y: auto
+}
+
+.modal__img {
+    width: 729px;
+    height: 413px;
+    margin-bottom: 21px;
+}
+
+.modal__close {
+    position: absolute;
+    top: 50px;
+    right: 120px;
+    width: 34px;
+    height: 34px;
+}
+
+.modal__title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 54px;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+    margin-top: 200px;
+}
+
+.modal__description {
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+    width: 730px;
+    margin-bottom: 20px;
+}
+
+.modal__genre-average {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 730px;
+    margin-bottom: 50px;
+}
+
+.modal__genre {
+    background: rgba(225, 131, 200, 1);
+    color: #FFFFFF;
+    border-radius: 8px;
+    padding: 9px 11px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    margin-right: 12px;
+}
+
+.modal__average {
+    background: #A785ED;
+    color: #FFFFFF;
+    border-radius: 8px;
+    padding: 9px 11px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.hidden {
+    display: none;
+}
